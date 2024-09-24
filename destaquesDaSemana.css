@@ -1,0 +1,295 @@
+h1 {
+    text-align: center;
+    padding-top: 70px;
+}
+
+body {
+    padding: 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    position: relative;
+    max-width: 150px;
+}
+
+header .navegation ul {
+    position: relative;
+    display: flex;
+
+
+}
+
+header .navegation li {
+    list-style: none;
+
+}
+
+header .navegation li a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: 100px;
+}
+
+.container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+   
+    padding: 100px;
+    margin-left: 20px;
+}
+
+.Produto {
+    width: 300px;
+  
+    height: 400px;
+    
+    background-color: #ffffff;
+   
+    border: 1px solid #7c7c7ca1;
+ 
+    margin-left: 20px;
+    margin-top: 45px;
+    padding-top: 30px;
+    padding-left: 40px;
+    transition: all 0.5s ease-out;
+    position: relative; /* Adicionado para posicionar o botão "Ver Mais" */
+}
+
+#imagens {
+    width: 85%;
+    height: 45%;
+    padding: 1px;
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+}
+
+#Home {
+    color: orangered;
+    font-size: 25px;
+}
+
+#Produtos {
+    color: orangered;
+    font-size: 25px;
+}
+
+#DestaquesdaSemana {
+    color: orangered;
+    font-size: 25px;
+}
+
+#Recentes {
+    color: orangered;
+    font-size: 25px;
+}
+
+#logo {
+    width: auto;
+    height: auto;
+}
+
+.descProdutos {
+    overflow: hidden;
+    /* Oculta o texto que transborda do contêiner */
+    text-overflow: ellipsis;
+    /* Adiciona reticências (...) para indicar texto cortado */
+    white-space: nowrap;
+    /* Impede a quebra de linha */
+    max-width: 100%;
+    /* Largura máxima do texto */
+    padding: 12px;
+}
+
+
+.like {
+    margin-bottom: 9px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: all 0.8 ease-out;
+
+}
+
+.like:hover {
+    transform: scale(1.3);
+}
+
+.Dislike {
+    margin-bottom: 5px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: all 0.8 ease-out;
+}
+
+.Dislike:hover {
+    transform: scale(1.3);
+
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Produto:hover {
+    transform: scale(1.1);
+}
+
+.textoLimitado {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.ver-mais {
+    color: blue;
+    cursor: pointer;
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+}
+
+.descProdutos {
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    position: relative; /* Adicionado para posicionar o botão "Ver Mais" */
+}
+.fonte{
+    padding: 4x;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.mostrarTextoCompleto {
+    white-space: normal;
+    overflow: auto;
+    text-overflow: initial;
+}
+
+.like-count {
+    position: absolute; 
+    top: 1; 
+    font-size: 16px; 
+    margin-left: 1px; 
+    margin-top: 12px;
+}
+.dislike-count{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+
+.Produto a {
+    text-decoration: none; 
+}
+
+
+.Produto:hover {
+    border: 1px solid orangered; 
+    cursor: pointer; 
+}
+
+
+.search-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.search-button {
+    margin-right: -85px;
+    padding: 8px 12px;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+.login-button {
+    margin-bottom: -9px;
+    margin-left: -20px;
+    width: 130px;
+    height: 55px;
+    padding: 8px 15px;
+    padding-top: 10px;
+    background-color: white;
+    color: white;
+    border:none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: orangered;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.titulo-sessao{
+   position: absolute;
+   top: 180px; 
+   right: 20px;
+   left: 500px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 25px;
+   color: rgb(0, 0, 0);
+
+}
