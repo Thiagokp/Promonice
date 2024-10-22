@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaCadastro.css">
+    <script src="paginaCadastro.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7903bfed90.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <main>  
+        <form id="login">
+            <section class="makelogin">
+                <h2>Bem vindo(a)!</h2>
+            </section>
+            <section class="inputs-container">
+                <input type="email" placeholder="example@gmail.com" id="loginEmail" required>
+
+                <div class="password-container">
+                    <input type="password" id="loginSenha" class="field-password" placeholder="******" required>
+                    <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+                    <i class="fa-solid fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+                </div>
+            </section>
+
+            <section class="password-infos">
+                <div>
+                    <input type="checkbox">
+                    <Span>Lembrar senha</Span>
+                </div>
+
+                <a href="#">Esqueceu sua senha?</a>
+            </section>
+
+            <button id="btn-login" onclick="validarLogin()">Login</button>
+            <div id="loginErrorMessage" class="error-message"></div>
+
+            <section class="links-container">
+                <span>Ou entre com:</span>
+
+                <aside>
+                    <a href="#"><i class="fa-brands fa-google-plus-g google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in linkedin"></i></a>
+                </aside>
+            </section>
+           
+           
+           
+           
+            <footer>
+                <hr>
+                <span>Ainda não possui uma conta? <a onclick="mostrarCadastro()">Cadastre-se</a></span>
+            </footer>
+        </form>
+
+       
+            <form id="cadastro" style="display: none;">
+                <section class="makelogin">
+                    <h2>Bem vindo(a)!</h2>
+                </section>
+                <section class="inputs-container">
+                    <input type="text" placeholder="Nome completo" id="cadastroNome" required>
+                   
+                    <div class="password-container">    <!--campo email, está com classe password pra facilitar estilização-->
+                        <input type="email" placeholder="example@gmail.com" id="cadastroEmail" required>
+                    </div>
+
+                    <div class="password-container">
+                        <input type="password" id="cadastroSenha" class="field-password" placeholder="Crie sua senha" required>
+                    </div>
+                    <div id="senhaErrorMessage" style="color: red; margin-top: 5px; width: 90%;" class="error-message"></div>
+                    <div class="password-container">
+                        <input type="password" id="confirmarCadastroSenha" class="field-password" placeholder="Confirme a senha" required>
+                    </div>
+
+                   
+
+                </section>
+                <div id="cadastroErrorMessage" style="color: red; margin-top: 5px; width: 90%;" class="error-message"></div>
+                <section class="password-infos">
+
+                   
+
+                    <div>
+                        <input type="checkbox">
+                        <Span>Lembrar senha</Span>
+                    </div>
+   
+                </section>
+   
+                <button id="btn-login" onclick="validarCadastro()">Cadastre-se</button>
+               
+               
+                <footer>
+                    <hr>
+                    <span>Já possui uma conta? <a onclick="mostrarLogin()">Faça login</a></span>
+                </footer>
+            </form>
+    </main>
+</body>
+</html>
